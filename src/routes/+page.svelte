@@ -23,7 +23,7 @@
 				</h2>
 				<a
 					class="poller mt-8 mr-auto ml-auto w-48 rounded-lg bg-[#2B2D42] p-4 text-center text-lg font-bold text-white underline transition-all hover:w-52 md:mr-0 md:ml-0"
-					href="https://goog.fillout.com/shrine-ysws-rsvp">RSVP Here!</a
+					href="https://snowflake.fillout.com/shrine">RSVP Here!</a
 				>
 			</div>
 			<div class="relative hidden flex-col justify-center md:flex">
