@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PlushRow from './PlushRow.svelte';
 </script>
 
 <div class="mb-8 w-full">
@@ -25,6 +26,7 @@
 </div>
 
 <div class="h-32">
+	<PlushRow />
 	<!-- row of merch that scrolls by -->
 </div>
 
