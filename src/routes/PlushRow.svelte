@@ -1,27 +1,10 @@
 <script lang="ts">
+	import { PLUSHIES } from '$lib';
 	import { onMount } from 'svelte';
 
+	let { blorbed }: { blorbed: (arg0: number) => void } = $props();
+
 	const PLUSHIE_SIZE: number = 128;
-	const PLUSHIES = [
-		'acrid.png',
-		'astrobot.png',
-		'banjo.png',
-		'claire.png',
-		'ena.png',
-		'gup.png',
-		'kita.png',
-		'knight.png',
-		'madotsuki.png',
-		'niko.png',
-		'peppino.png',
-		'quaber.png',
-		'riebek.png',
-		'sans.png',
-		'shovelknight.png',
-		'skelly.png',
-		'slime.png',
-		'spamtong.png'
-	];
 	let plushieBag: number[] = [];
 	let activePlushies: number[] = $state([]);
 	let position: number = $state(0.0);
@@ -63,12 +46,13 @@
 <div class="relative flex h-full flex-row overflow-hidden">
 	{#each activePlushies as plushI, i}
 		{#if position - i * PLUSHIE_SIZE - PLUSHIE_SIZE < window.innerWidth}
-			<img
-				src={`plushies/${PLUSHIES[plushI]}`}
+			<button
+				onclick={() => blorbed(plushI)}
 				style={`left: ${position - (i + 1) * PLUSHIE_SIZE}px; width: ${PLUSHIE_SIZE}px`}
-				class="absolute"
-				alt={PLUSHIES[plushI]}
-			/>
+				class="absolute cursor-pointer"
+			>
+				<img src={`plushies/${PLUSHIES[plushI]}`} alt={PLUSHIES[plushI]} />
+			</button>
 		{/if}
 	{/each}
 </div>

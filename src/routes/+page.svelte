@@ -1,10 +1,18 @@
 <script lang="ts">
+	import Blorbo from './Blorbo.svelte';
 	import PlushRow from './PlushRow.svelte';
+
+	let blorbo: any = $state(undefined);
+
+	function blorbed(index: number) {
+		console.log(blorbo);
+		blorbo.updateBlorbo(index);
+	}
 </script>
 
 <div class="mb-8 w-full">
 	<div
-		class="relative mr-8 ml-8 h-128 overflow-hidden rounded-b-2xl bg-[#F8F32B] p-8 inset-shadow-lg"
+		class="relative mr-8 ml-8 h-164 overflow-hidden rounded-b-2xl bg-[#F8F32B] p-8 inset-shadow-lg"
 	>
 		<div class="m-auto flex h-full max-w-250 flex-row align-middle">
 			<div class="flex flex-col justify-center">
@@ -18,6 +26,10 @@
 					href="https://goog.fillout.com/shrine-ysws-rsvp">RSVP Here!</a
 				>
 			</div>
+			<div class="relative hidden flex-col justify-center md:flex">
+				<img src="shrine.png" alt="shrine" class="min-w-96 scale-150" />
+				<Blorbo bind:this={blorbo} />
+			</div>
 		</div>
 		<a href="https://hackclub.com/">
 			<img
@@ -30,8 +42,7 @@
 </div>
 
 <div class="h-32">
-	<PlushRow />
-	<!-- row of merch that scrolls by -->
+	<PlushRow {blorbed} />
 </div>
 
 <div class="w-full bg-[#2B2D42] p-8 text-white inset-shadow-lg/50">
