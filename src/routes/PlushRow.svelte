@@ -49,7 +49,7 @@
 			<button
 				onclick={() => blorbed(plushI)}
 				style={`left: ${position - (i + 1) * PLUSHIE_SIZE}px; width: ${PLUSHIE_SIZE}px`}
-				class="absolute cursor-pointer"
+				class="absolute cursor-pointer transition hover:scale-110"
 			>
 				<img src={`plushies/${PLUSHIES[plushI]}`} alt={PLUSHIES[plushI]} />
 			</button>
