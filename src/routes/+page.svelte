@@ -3,9 +3,9 @@
 </script>
 
 <div class="mb-8 w-full">
-	<div class="relative mr-8 ml-8 h-128 rounded-b-2xl bg-[#F8F32B] inset-shadow-lg">
+	<div class="relative mr-8 ml-8 h-128 overflow-hidden rounded-b-2xl bg-[#F8F32B] inset-shadow-lg">
 		<div class="m-auto flex h-full max-w-250 flex-row align-middle">
-			<div class="flex flex-col justify-center p-8">
+			<div class="flex flex-col justify-center">
 				<h1 class="text-left text-8xl">Shrine</h1>
 				<h2 class="text-2xl">
 					Make and code a project about your favorite fictional character, get a grant to buy merch
@@ -17,11 +17,13 @@
 				>
 			</div>
 		</div>
-		<img
-			src="https://assets.hackclub.com/flag-orpheus-top.svg"
-			class="absolute top-0 left-8"
-			alt="hack club flag"
-		/>
+		<a href="https://hackclub.com/">
+			<img
+				src="https://assets.hackclub.com/flag-orpheus-left.svg"
+				class="absolute top-0 left-0 w-48 origin-top-left transition hover:rotate-6"
+				alt="hack club flag"
+			/>
+		</a>
 	</div>
 </div>
 
