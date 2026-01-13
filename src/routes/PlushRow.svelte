@@ -52,7 +52,11 @@
 				style={`left: ${position - (i + 1) * PLUSHIE_SIZE}px; width: ${PLUSHIE_SIZE}px`}
 				class="absolute cursor-pointer transition hover:scale-110"
 			>
-				<img src={`plushies/${PLUSHIES[plushI]}`} alt={PLUSHIES[plushI]} />
+				<img
+					src={`plushies/${PLUSHIES[plushI]}`}
+					alt={PLUSHIES[plushI]}
+					style={`width: ${PLUSHIE_SIZE}px`}
+				/>
 			</button>
 		{/if}
 	{/each}

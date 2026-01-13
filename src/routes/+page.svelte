@@ -45,7 +45,7 @@
 	<PlushRow {blorbed} />
 </div>
 
-<div class="w-full bg-[#2B2D42] p-8 text-white inset-shadow-lg/50">
+<main class="w-full bg-[#2B2D42] p-8 text-white inset-shadow-lg/50">
 	<div class="m-auto max-w-250">
 		<h1 class="poller mb-4 text-4xl">What is Shrine?</h1>
 		<p class="mb-8 font-[Pangolin] text-lg">
@@ -91,7 +91,7 @@
 			<a class="text-[#F8F32B] underline" href="mailto:me@ifeellikeharukananase.tech">email me</a>!
 		</p>
 	</div>
-</div>
+</main>
 
 <div class="mt-8 mr-8 ml-8 rounded-t-2xl bg-[#8D99AE] inset-shadow-lg">
 	<div
