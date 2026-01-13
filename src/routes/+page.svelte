@@ -31,7 +31,7 @@
 				<Blorbo bind:this={blorbo} />
 			</div>
 		</div>
-		<a href="https://hackclub.com/">
+		<a href="https://hackclub.com/" tabindex="-1">
 			<img
 				src="https://assets.hackclub.com/flag-orpheus-left.svg"
 				class="absolute top-0 left-0 w-48 origin-top-left transition hover:rotate-6"

@@ -47,6 +47,7 @@
 	{#each activePlushies as plushI, i}
 		{#if position - i * PLUSHIE_SIZE - PLUSHIE_SIZE < window.innerWidth}
 			<button
+				tabindex="-1"
 				onclick={() => blorbed(plushI)}
 				style={`left: ${position - (i + 1) * PLUSHIE_SIZE}px; width: ${PLUSHIE_SIZE}px`}
 				class="absolute cursor-pointer transition hover:scale-110"

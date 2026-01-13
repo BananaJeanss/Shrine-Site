@@ -26,6 +26,7 @@
 </script>
 
 <button
+	tabindex="-1"
 	class="absolute left-36 cursor-pointer"
 	style={`top: ${36 + 5 * Math.sin(time) - Math.max(0, 200 * (time - timeSinceJump) * (1 - (time - timeSinceJump)))}px`}
 	onclick={jump}
